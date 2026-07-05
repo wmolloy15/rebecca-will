@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f6f1e8;
+  --ink: #58463a;
+  --forest: #475344;
+  --stone: #cec4b7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading), serif;
+}
