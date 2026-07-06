@@ -1,16 +1,20 @@
 export const wedding = {
-  couple: {
-    bride: "Rebecca",
-    groom: "Will",
-  },
+  bride: "Rebecca",
 
-  saveTheDate: "Save the date",
+  groom: "Will",
 
-  heading: "are getting married",
+  saveTheDate: "Save the Date",
 
-  date: "20 November 2027",
+  subtitle: "We're getting married",
+
+  date: "2027-11-20T15:00:00",
 
   venue: "Euroa Butter Factory",
 
   location: "Victoria",
+
+  note:
+    "We can't wait to celebrate this next chapter with our favourite people.",
+
+  signoff: "Formal invitation to follow.",
 };

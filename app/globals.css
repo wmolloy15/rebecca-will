@@ -1,10 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --paper: #f6f1e8;
-  --ink: #58463a;
-  --forest: #475344;
-  --stone: #cec4b7;
+  --cream: #f5efe6;
+  --ink: #2f2924;
+  --stone: #b9aa9a;
 }
 
 * {
@@ -17,14 +18,11 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--paper);
+  background: var(--cream);
   color: var(--ink);
-  font-family: var(--font-body), sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-heading), serif;
+::selection {
+  background: var(--ink);
+  color: var(--cream);
 }
