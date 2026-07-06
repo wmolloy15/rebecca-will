@@ -9,6 +9,8 @@ export const wedding = {
 
   date: "2027-11-20T15:00:00",
 
+  dateDisplay: "Saturday 20 November 2027",
+
   venue: "Euroa Butter Factory",
 
   location: "Victoria",

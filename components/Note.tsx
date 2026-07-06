@@ -2,22 +2,23 @@ import { wedding } from "@/lib/wedding";
 
 export default function Note() {
   return (
-    <section className="px-8 py-40">
+    <section className="px-6 py-32 md:px-8 md:py-40">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="mb-10 text-5xl tracking-[-0.04em]">
+        <h2 className="site-heading">
           A little note
         </h2>
 
-        <p className="text-xl leading-10">
-          {wedding.note}
+        <div className="mx-auto mt-12 max-w-2xl space-y-7">
+          <p className="site-copy">
+            {wedding.note}
+          </p>
 
-          <br />
-          <br />
+          <p className="site-copy">
+            Thank you for saving the date.
+          </p>
+        </div>
 
-          Thank you for saving the date.
-        </p>
-
-        <p className="mt-12 text-sm uppercase tracking-[0.3em] opacity-60">
+        <p className="site-smallcaps mt-14">
           {wedding.signoff}
         </p>
       </div>

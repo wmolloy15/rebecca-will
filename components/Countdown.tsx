@@ -26,12 +26,12 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className="mt-12 text-center">
-      <p className="text-6xl font-light tracking-[-0.04em]">
+    <div className="text-center">
+      <p className="site-number">
         {days}
       </p>
 
-      <p className="mt-2 text-sm uppercase tracking-[0.3em] opacity-70">
+      <p className="site-smallcaps mt-5">
         Days to Go
       </p>
     </div>
