@@ -22,6 +22,7 @@ export default function Hero() {
           fill
           className="object-contain"
           priority
+          sizes="(max-width: 768px) 16rem, 20rem"
         />
       </div>
       <h1 className="heading text-5xl md:text-7xl lg:text-8xl mb-4">

@@ -12,6 +12,7 @@ export default function Sunset() {
             alt="Rebecca and Will looking at sunset"
             fill
             className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
           />
         </div>
         <p className="body-text text-lg text-ink/70 mt-6">

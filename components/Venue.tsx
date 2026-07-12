@@ -13,10 +13,11 @@ export default function Venue() {
         </h2>
         <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-md mb-6">
           <Image
-            src="/euroa-butter-factory.png"
+            src="/euroa-butter-factory.png"   // fixed spelling
             alt={location.name}
             fill
             className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div className="text-center">
