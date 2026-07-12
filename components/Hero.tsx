@@ -15,7 +15,7 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center px-4 py-24 text-center"
     >
-      {/* Container for the dancing illustration */}
+      {/* Dancing illustration */}
       <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-8">
         <Image
           src="/dancing-illustration.png"

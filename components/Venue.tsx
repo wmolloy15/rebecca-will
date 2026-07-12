@@ -11,7 +11,7 @@ export default function Venue() {
         <h2 className="heading text-4xl md:text-5xl text-center mb-8">
           Venue &amp; Location
         </h2>
-        {/* Container for the venue image */}
+        {/* Euroa Butter Factory image */}
         <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-md mb-6">
           <Image
             src="/euroa-butter-factory.png"
