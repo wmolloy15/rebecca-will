@@ -1,16 +1,23 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-const ebGaramond = EB_Garamond({
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-playfair",
   display: "swap",
-  variable: "--font-serif",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Rebecca & Will",
-  description: "Save the date for Rebecca and Will's wedding.",
+  title: "Rebecca & Will | Save the Date",
+  description: "Save the date for Rebecca and Will's wedding",
 };
 
 export default function RootLayout({
@@ -19,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={ebGaramond.variable}>
-      <body>{children}</body>
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <body className="bg-cream text-ink antialiased font-sans">
+        {children}
+      </body>
     </html>
   );
 }

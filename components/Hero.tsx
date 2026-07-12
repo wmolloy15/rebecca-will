@@ -1,53 +1,38 @@
-import Countdown from "@/components/Countdown";
-import MoonCoupleIllustration from "@/components/illustrations/MoonCoupleIllustration";
-import { wedding } from "@/lib/wedding";
+// components/Hero.tsx
+import Image from "next/image";
+import { weddingData } from "@/lib/wedding";
 
 export default function Hero() {
+  const { couple, date } = weddingData;
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-16 md:px-8 md:py-20">
-      <div className="mx-auto flex w-full max-w-5xl flex-col items-center text-center">
-        <p className="site-eyebrow">
-          {wedding.saveTheDate}
-        </p>
-
-        <h1 className="site-display mt-16 md:mt-20">
-          <span>{wedding.bride}</span>
-
-          <span className="site-display-amp">&amp;</span>
-
-          <span>{wedding.groom}</span>
-        </h1>
-
-        <p className="site-copy mt-16 md:mt-20">
-          {wedding.subtitle}
-        </p>
-
-        <p className="site-smallcaps mt-6">
-          {wedding.dateDisplay}
-        </p>
-
-        <div className="my-16 flex w-full justify-center md:my-20">
-          <figure className="stationery-card w-full max-w-[390px] px-8 py-10 md:max-w-[420px] md:px-10 md:py-12">
-            <MoonCoupleIllustration className="mx-auto h-auto w-full" />
-          </figure>
-        </div>
-
-        <Countdown />
-
-        <div className="mt-14 space-y-3">
-          <h2 className="site-subheading">
-            {wedding.venue}
-          </h2>
-
-          <p className="site-copy">
-            {wedding.location}
-          </p>
-        </div>
-
-        <div className="mt-14 animate-bounce text-xl opacity-35">
-          ↓
-        </div>
+    <section
+      id="hero"
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-24 text-center"
+    >
+      <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-8">
+        <Image
+          src="/dancing-illustration.png"
+          alt={`${couple.bride} and ${couple.groom} dancing`}
+          fill
+          className="object-contain"
+          priority
+        />
       </div>
+      <h1 className="heading text-5xl md:text-7xl lg:text-8xl mb-4">
+        {couple.bride} &amp; {couple.groom}
+      </h1>
+      <p className="subheading text-xl md:text-2xl tracking-[0.2em] uppercase text-ink/80 mb-2">
+        Save the Date
+      </p>
+      <p className="body-text text-lg md:text-xl text-ink/70">
+        {formattedDate}
+      </p>
     </section>
   );
 }

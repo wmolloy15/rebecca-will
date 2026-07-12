@@ -1,22 +1,14 @@
-export const wedding = {
-  bride: "Rebecca",
-
-  groom: "Will",
-
-  saveTheDate: "Save the Date",
-
-  subtitle: "We're getting married",
-
-  date: "2027-11-20T15:00:00",
-
-  dateDisplay: "Saturday 20 November 2027",
-
-  venue: "Euroa Butter Factory",
-
-  location: "Victoria",
-
-  note:
-    "We can't wait to celebrate this next chapter with our favourite people.",
-
-  signoff: "Formal invitation to follow.",
+// lib/wedding.ts
+export const weddingData = {
+  couple: {
+    bride: "Rebecca",
+    groom: "Will",
+  },
+  date: "2027-06-19", // adjust as needed
+  location: {
+    name: "Euroa Butter Factory",
+    address: "Euroa, Victoria, Australia",
+    mapUrl: "https://maps.google.com/?q=Euroa+Butter+Factory",
+  },
+  rsvpEmail: "rsvp@rebeccawillwedding.com",
 };
