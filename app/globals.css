@@ -25,7 +25,6 @@
     font-weight: 700;
   }
 
-  /* Utility classes for typography consistency */
   .heading {
     font-family: var(--font-playfair), serif;
     font-weight: 700;

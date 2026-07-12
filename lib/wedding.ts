@@ -4,7 +4,7 @@ export const weddingData = {
     bride: "Rebecca",
     groom: "Will",
   },
-  date: "2027-06-19", // adjust as needed
+  date: "2027-06-19",
   location: {
     name: "Euroa Butter Factory",
     address: "Euroa, Victoria, Australia",
