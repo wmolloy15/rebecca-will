@@ -1,4 +1,3 @@
-// components/Sunset.tsx
 import Image from "next/image";
 
 export default function Sunset() {
@@ -6,7 +5,6 @@ export default function Sunset() {
     <section id="sunset" className="py-20 px-4 bg-cream">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="heading text-4xl md:text-5xl mb-8">Until We Meet</h2>
-        {/* Sunset illustration */}
         <div className="relative w-full max-w-md mx-auto h-80 md:h-96">
           <Image
             src="/sunset-illustration.png"

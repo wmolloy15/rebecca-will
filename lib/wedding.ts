@@ -1,8 +1,7 @@
-// lib/wedding.ts
 export const weddingData = {
   couple: {
     bride: "Rebecca",
-    groom: "BILBO",
+    groom: "Will",  // Changed from "BILBO"
   },
   date: "2027-06-19",
   location: {

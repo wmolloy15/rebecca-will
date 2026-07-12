@@ -1,4 +1,3 @@
-// components/Hero.tsx
 import Image from "next/image";
 import { weddingData } from "@/lib/wedding";
 
@@ -11,11 +10,7 @@ export default function Hero() {
   });
 
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex flex-col items-center justify-center px-4 py-24 text-center"
-    >
-      {/* Dancing illustration */}
+    <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-4 py-24 text-center">
       <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto mb-8">
         <Image
           src="/dancing-illustration.png"
