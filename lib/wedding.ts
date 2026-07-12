@@ -2,7 +2,7 @@
 export const weddingData = {
   couple: {
     bride: "Rebecca",
-    groom: "Will",
+    groom: "BILBO",
   },
   date: "2027-06-19",
   location: {
