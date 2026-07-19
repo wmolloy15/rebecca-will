@@ -1,11 +1,9 @@
 /* app/globals.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
   :root {
-    --color-cream: #fdf8f0;
+    --color-warm-cream: #f3ebd9;  /* your specified color */
     --color-ink: #2c2c2c;
     --color-gold: #b8860b;
   }
@@ -15,7 +13,7 @@
   }
 
   body {
-    background-color: var(--color-cream);
+    background-color: var(--color-warm-cream);
     color: var(--color-ink);
     font-family: var(--font-inter), sans-serif;
   }

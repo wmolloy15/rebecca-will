@@ -1,4 +1,3 @@
-// components/Navigation.tsx
 "use client";
 
 import { useState, useEffect } from "react";
@@ -8,7 +7,6 @@ const navItems = [
   { label: "Countdown", href: "#countdown" },
   { label: "Venue", href: "#venue" },
   { label: "Note", href: "#note" },
-  { label: "Sunset", href: "#sunset" },
 ];
 
 export default function Navigation() {
@@ -26,8 +24,8 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-cream/95 backdrop-blur-sm shadow-sm py-3"
-          : "bg-transparent py-5"
+          ? "bg-warm-cream/90 backdrop-blur-sm shadow-sm py-2"
+          : "bg-transparent py-3"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-center space-x-6 md:space-x-10 text-sm md:text-base">
@@ -35,7 +33,7 @@ export default function Navigation() {
           <a
             key={item.href}
             href={item.href}
-            className="heading uppercase tracking-widest text-ink/70 hover:text-ink transition-colors duration-200"
+            className="heading uppercase tracking-widest text-ink/70 hover:text-ink transition-colors duration-200 text-xs md:text-sm"
           >
             {item.label}
           </a>

@@ -1,9 +1,8 @@
-// components/Footer.tsx
 import { weddingData } from "@/lib/wedding";
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-cream py-8 px-4 text-center">
+    <footer className="bg-ink text-warm-cream py-8 px-4 text-center">
       <div className="max-w-4xl mx-auto">
         <p className="heading text-sm uppercase tracking-widest">
           Rebecca &amp; Will

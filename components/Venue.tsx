@@ -1,39 +1,31 @@
-import Image from "next/image";
 import { weddingData } from "@/lib/wedding";
 
 export default function Venue() {
   const { location } = weddingData;
 
   return (
-    <section id="venue" className="bg-cream px-4 py-20">
-      <div className="mx-auto max-w-4xl">
-        <h2 className="heading mb-8 text-center text-4xl md:text-5xl">
+    <section id="venue" className="py-20 pb-32 px-4 bg-warm-cream">  {/* Added pb-16 */}
+      <div className="max-w-4xl mx-auto">
+        <h2 className="heading text-4xl md:text-5xl text-center mb-10">
           Venue &amp; Location
         </h2>
-
-        <Image
-          src="/euroa-butter-factory.png"
-          alt={`Hand-drawn illustration of ${location.name}`}
-          width={1200}
-          height={900}
-          className="mx-auto h-auto w-full rounded-xl object-contain shadow-md"
-          sizes="(max-width: 768px) 100vw, 56rem"
-        />
-
+        <div className="w-full h-72 md:h-[500px] rounded-xl overflow-hidden shadow-lg mb-4 bg-transparent">
+          <img
+            src="/euroa-butter-factory.png"
+            alt={location.name}
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="text-center">
-          <h3 className="heading mt-6 text-2xl md:text-3xl">
-            {location.name}
-          </h3>
-
-          <p className="body-text mt-2 text-lg text-ink/70">
+          <h3 className="heading text-2xl md:text-3xl">{location.name}</h3>
+          <p className="body-text text-lg text-ink/70 mt-2">
             {location.address}
           </p>
-
           <a
             href={location.mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="body-text mt-4 inline-block border-b border-gold/30 pb-1 text-sm uppercase tracking-widest text-gold transition-colors hover:text-ink"
+            className="inline-block mt-4 body-text text-sm uppercase tracking-widest text-gold hover:text-ink transition-colors border-b border-gold/30 pb-1"
           >
             View on Map
           </a>
