@@ -1,9 +1,10 @@
+// app/page.tsx
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import Countdown from "@/components/Countdown";
 import Venue from "@/components/Venue";
 import Note from "@/components/Note";
-import GuestList from "@/components/GuestList";
+import GuestListWrapper from "@/components/GuestListWrapper";
 import Sunset from "@/components/Sunset";
 import Footer from "@/components/Footer";
 
@@ -16,7 +17,7 @@ export default function Home() {
         <Countdown />
         <Venue />
         <Note />
-        <GuestList />
+        <GuestListWrapper />  {/* ✅ Correct: Use JSX tags */}
         <Sunset />
         <Footer />
       </main>

@@ -1,10 +1,10 @@
-// components/GuestList.tsx
+// components/GuestListWrapper.tsx
 'use client';
 
 import { useState, useEffect } from 'react';
 import { useForm } from '@formspree/react';
 
-export default function GuestList() {
+export default function GuestListWrapper() {
   const [isClient, setIsClient] = useState(false);
   const [state, handleSubmit] = useForm('xykrbqoz');
 
@@ -12,7 +12,7 @@ export default function GuestList() {
     setIsClient(true);
   }, []);
 
-  // Don't render anything on the server
+  // Show loading state on the server
   if (!isClient) {
     return (
       <section id="guestlist" className="py-20 px-4 bg-cream">
@@ -24,6 +24,7 @@ export default function GuestList() {
     );
   }
 
+  // Show thank you message on success
   if (state.succeeded) {
     return (
       <section id="guestlist" className="py-20 px-4 bg-cream">
@@ -37,6 +38,7 @@ export default function GuestList() {
     );
   }
 
+  // Show the form
   return (
     <section id="guestlist" className="py-20 px-4 bg-cream">
       <div className="max-w-2xl mx-auto">

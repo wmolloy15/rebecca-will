@@ -10,5 +10,5 @@ export const weddingData = {
     address: "Euroa, Victoria, Australia",
     mapUrl: "https://maps.google.com/?q=Euroa+Butter+Factory",
   },
-  rsvpEmail: "rsvp@rebeccawillwedding.com",
+  rsvpEmail: "becandbillwedding@gmail.com",
 };
